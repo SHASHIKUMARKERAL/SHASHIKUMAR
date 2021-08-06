@@ -1,0 +1,44 @@
+/*C Program to Calculate Area and Circumference of circle.
+    Where,
+    Area = PI*R*R;
+    Circumference = 2*PI*R;*/
+         
+#include <stdio.h>
+
+int main()
+{
+    int rad;
+    float PI=3.14,area,cir;
+    printf("Enter radious\n");
+    scanf("%d",&rad);
+    
+    area = PI * rad * rad;
+    printf("area=%f\n",area);
+    
+    cir = 2 * PI * rad;
+    printf("cir=%f",cir);
+    return 0;
+}
+
+
+
+OR
+
+//By using macros.
+         
+#include <stdio.h>
+#define PI 3.14
+int main()
+{
+    int rad;
+    float area,cir;
+    printf("Enter radious\n");
+    scanf("%d",&rad);
+    
+    area = PI * rad * rad;
+    printf("area=%f\n",area);
+    
+    cir = 2 * PI * rad;
+    printf("cir=%f",cir);
+    return 0;
+}
