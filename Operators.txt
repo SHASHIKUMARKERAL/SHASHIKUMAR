@@ -1,0 +1,47 @@
+//C Program to explain all operators using different datatypes.
+
+#include <stdio.h>
+
+int main()
+{
+    int a=4,b=2;
+    float c=8.2,d=4.2;
+    
+//Arithmatic Operators(+,-,*,/,%)
+
+    printf("sum=%d\n",a+b);//6
+    printf("diff=%d\n",a-b);//2
+    printf("mul=%d\n",a*b);//8
+    printf("div=%d\n",a/b);//2
+    printf("mod=%d\n",a%b);//0
+    
+//Relational Operators(<,>,<=,>=,==,!=)
+
+    printf("%d\n",c>d);//1
+    printf("%d\n",c<d);//0
+    printf("%d\n",c>=d);//1
+    printf("%d\n",c<=d);//0
+    printf("%d\n",c==d);//0
+    printf("%d\n",c!=d);//1
+    
+//Bitwise Operators(&,|,^)
+   
+    printf("%d\n",a&b);//0
+    printf("%d\n",a|b);//6
+    printf("%d\n",a^b);//6
+
+//Logical Operators(&&,||,!)
+    printf("%d\n",a&&b);//1
+    printf("%d\n",a||b);//1
+    printf("%d\n",!a);//0
+    
+//Ternary Operators(?,:) 
+// variable = Expression1 ? Expression2 : Expression3
+
+
+	(c > d) ?
+	printf("c is greater than d that is %f > %d",c, d):
+	printf("d is greater than c that is %f > %d",d, c);// c is greater than d 
+    
+    return 0;
+}
