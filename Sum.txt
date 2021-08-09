@@ -1,0 +1,50 @@
+/* Using Break /*
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+int main()
+{
+    int numbers, sum=0;
+    scanf("%d",&numbers);
+    int arr[numbers];
+    int i;
+    for(i=0;i<numbers;i++)
+    {
+        scanf("%d",&arr[i]);
+        if(arr[i]<=0)
+            break;
+            sum += arr[i];
+    }
+    printf("SUM is %d",sum);
+    return 0;
+}
+
+
+
+
+/*Using Continue */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+int main()
+{
+    int numbers, sum=0;
+    scanf("%d",&numbers);
+    int arr[numbers];
+    int i;
+    for(i=0;i<numbers;i++)
+    {
+        scanf("%d",&arr[i]);
+        if(arr[i]<=0)
+            continue;
+            sum += arr[i];
+    }
+    printf("SUM is %d",sum);
+    return 0;
+}
