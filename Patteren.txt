@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int noofRows;
+    printf("Enter height: ");
+    scanf("%d", &noofRows);
+    int counter, rowNumber;
+    for(rowNumber = 0; rowNumber < noofRows; rowNumber++)
+    {
+        for(counter = 0; counter < noofRows - rowNumber; counter++)
+            printf(" ");
+            printf("/");
+        for(counter = 0; counter < rowNumber; counter++)
+            if(rowNumber >= 1)
+                for(counter = 0; counter < rowNumber*2; counter++)
+                {
+                    if(rowNumber == noofRows-1)
+                    {
+                        printf("_");
+                    }
+                    else
+                    {
+                        printf(" ");
+                    }
+                }
+                printf("\\");
+                printf("\n");
+    }
+}
